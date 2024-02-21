@@ -9,49 +9,59 @@ weapon = False
 
 def victory_screen():
     print("")
-    print("After defeating the therizinosaurus, no dino in Ark dared mess with Tim")
+    print("After defeating the therizinosaurus, no dino in Ark dared mess with " + name)
     time.sleep(3)
     print("")
-    print("Tim decided to stop looking for a way out, he had fallen in love with Ark")
+    print(
+        name
+        + " decided to stop looking for a way out, they had fallen in love with Ark"
+    )
     time.sleep(3)
     print("")
-    print("With the bones of his enemies, he constructed a compound for his new life.")
+    print(
+        "With the bones of their enemies, they constructed a beautiful house for their new life."
+    )
     time.sleep(4)
     print("")
-    print("Tim lived happily ever after, with his new Sarco wife")
+    print(name + " lived happily ever after")
     time.sleep(2)
     print("")
-    print("Credits: Dan.  ish-credits: Tim, Jimmy")
+    print("Credits: Dan Armstrong")
 
 
 def quetzal_room():
     print("")
-    print("Tim flees in terror and suddenly hears a deafening roar from above!")
+    print(name + " flees in terror and suddenly hears a deafening roar from above!")
     time.sleep(3)
     print("")
-    print("It's a Quetzal!  The giant bird is swooping down towards Tim!")
+    print("It's a Quetzal!  The giant bird is swooping down towards you!")
     time.sleep(2)
     print("")
     print(
-        "Without time to think, Tim leaps onto the Quetzals back and away from the jaws of the therizinosaurus"
+        "Without time to think, you leap onto the Quetzals back and away from the jaws of the therizinosaurus!"
     )
     time.sleep(4)
     print("")
     print(
-        "Tim was finally safe, soaring above the skies of Ark, he realises the beauty and begins to enjoy it."
+        name
+        + " was finally safe, soaring above the skies of Ark, they realized the beauty and began to enjoy it."
     )
     time.sleep(3)
     print("")
     print(
-        "However, his relief is short lived as the Quetzal turns over and shakes Tim off!"
+        "However, the relief is short lived as the Quetzal turns over and shakes "
+        + name
+        + " off!"
     )
     time.sleep(3)
     print("")
     print(
-        "With a scream, Tim braced for impact, his world spinning as he tumbled through the air, "
+        "With a scream, "
+        + name
+        + " braced for impact, their world spinning as they tumbled through the air, "
     )
     print(
-        "hoping against hope for a miracle to save him from the jaws of certain doom."
+        "hoping against hope for a miracle to save them from the jaws of certain doom."
     )
     time.sleep(5)
     print("")
@@ -62,20 +72,23 @@ def quetzal_room():
 def boss_battle():
     directions = ["backward", "flee", "fight"]
     print("")
-    print("Tim leaves Jimmy behind and heads toward a clearing to set up his own camp.")
+    print(
+        name
+        + " leaves Jimmy behind and heads toward a clearing to set up their own camp."
+    )
     time.sleep(3)
     print("")
-    print("As he begins to settle down for the night, he once again hears the")
+    print("As you begin to settle down for the night, you once again hears the")
     time.sleep(2)
     print("same bone-chilling roar as before.  But this time, closer.")
     time.sleep(2)
     print("")
     print(
-        "Out of the woods comes out a therizinosaurus! it's razer sharp claws half the length of Tim himself."
+        "Out of the woods comes out a therizinosaurus! it's razer sharp claws half the length of your body!"
     )
     time.sleep(3)
     print("")
-    print("Tim is close to the woods, he can flee or fight.  What will you do?")
+    print(name + " is close to the woods, they can flee or fight.  What will they do?")
     user_input = ""
     while user_input not in directions:
         print("Options: flee, fight")
@@ -84,47 +97,50 @@ def boss_battle():
             if weapon:
                 print("")
                 print(
-                    "Tim's heart raced as he faced off with the terrifying therizinosaurus."
+                    name
+                    + "'s heart raced as they faced off with the terrifying therizinosaurus."
                 )
                 time.sleep(3)
                 print("")
                 print(
-                    "With his rifle and riot shield, Tim ran from tree to tree, shooting and dodging."
+                    "With your rifle and riot shield, you run from tree to tree, shooting and dodging."
                 )
                 time.sleep(3)
                 print("")
                 print(
-                    "The therizinosaurus swiped at Tim with all his might and lost his footing!"
+                    "The therizinosaurus swiped at you with all its might and lost its footing!"
                 )
                 time.sleep(3)
                 print("")
                 print(
-                    "Tim realized his chance, charged out of woods and put a bullet between its eyes."
+                    name
+                    + " realized it's their chance, charged out of woods and was able to take it down!"
                 )
                 time.sleep(3)
                 print("")
-                print(
-                    "Tim triumphly stood on the head of the therizinosaurus and spit in its mouth for good measure."
-                )
+                print(name + " triumphantly stands on the therizinosaurus")
                 time.sleep(5)
                 victory_screen()
             else:
                 print("")
                 print(
-                    "Tim's heart raced as he faced off with the terrifying therizinosaurus."
+                    name
+                    + "'s heart raced as they faced off with the terrifying therizinosaurus."
                 )
                 time.sleep(3)
                 print("")
                 print(
-                    "With nothing but his fists and courage, Tim charges the therizinosaurus!"
+                    "With nothing but your fists and courage, you charge the therizinosaurus!"
                 )
                 time.sleep(2)
                 print("")
-                print("The therizinosaurus looks confused as the unarmed man charges")
+                print(
+                    "The therizinosaurus looks confused as the unarmed, small human charges"
+                )
                 time.sleep(2)
                 print("")
                 print(
-                    "With an easy stab of a finger, Tim is impaled, and carried back, alive,"
+                    "With an easy stab of a finger, you are impaled, and carried back, alive,"
                 )
                 print("for the therizinosaurus children to eat")
                 time.sleep(3)
@@ -277,7 +293,7 @@ def meet_traveler():
     time.sleep(2)
     print("'Go right, trust me, it's your best chance of survival' Jimmy tells you.")
     print("")
-    print(name + " leaves the traveler, unsure if he should trust him.")
+    print(name + " leaves the traveler, unsure if they should trust him.")
     user_input = ""
     while user_input not in directions:
         print("Options: backward, left, forward, right")
@@ -344,7 +360,7 @@ def intro_boss():
     directions = ["forward", "backward", "left"]
     print("")
     print(
-        "As you ventures deeper into the untamed wilderness, you stumble upon a tranquil clearing."
+        "As you venture deeper into the untamed wilderness, you stumble upon a tranquil clearing."
     )
     print("")
     time.sleep(3)
@@ -381,16 +397,14 @@ def intro_scene():
     )
     time.sleep(2)
     print("")
-    print(
-        "A horrifying realization overcomes you.  You are inside his inside the game, Ark!"
-    )
+    print("A horrifying realization overcomes you.  You are inside the game, Ark!")
     print("")
     time.sleep(2)
     print(
         "You must navigate this unfamiliar landscape, forging your path amidst towering dinosaurs and unknown dangers."
     )
     print("")
-    print(name + " are you ready to go?")
+    print(name + ", are you ready to go?")
     userInput = ""
     while userInput not in directions:
         print("Options: forward")
